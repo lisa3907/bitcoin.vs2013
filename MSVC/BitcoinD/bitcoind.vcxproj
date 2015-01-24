@@ -87,7 +87,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>USE_UPNP;UNICODE;WIN32;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\MyProjects\Bitcoin-vs2013\src\leveldb\include;D:\MyProjects\BitcoinDeps_2013\openssl-1.0.1e\inc32;D:\MyProjects\BitcoinDeps_2013\db-4.7.25.NC\build_windows;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0\boost;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\MyProjects\Bitcoin-vs2013\src\leveldb\include;D:\MyProjects\BitcoinDeps\openssl-1.0.1e\inc32;D:\MyProjects\BitcoinDeps\db-4.7.25.NC\build_windows;D:\MyProjects\BitcoinDeps\boost_1_55_0;D:\MyProjects\BitcoinDeps\boost_1_55_0\boost;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -99,7 +99,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>D:\MyProjects\BitcoinDeps_2013\miniupnpc\msvc\Debug;D:\MyProjects\BitcoinDeps_2013\db-4.7.25.NC\build_windows\Debug;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0\stage\lib;D:\MyProjects\BitcoinDeps_2013\openssl-1.0.1e\out32.dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\MyProjects\BitcoinDeps\miniupnpc\msvc\Debug;D:\MyProjects\BitcoinDeps\db-4.7.25.NC\build_windows\Debug;D:\MyProjects\BitcoinDeps\boost_1_55_0\stage\lib;D:\MyProjects\BitcoinDeps\openssl-1.0.1e\out32.dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>iphlpapi.lib;miniupnpc.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;ssleay32.lib;libeay32.lib;libdb47sd.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
@@ -107,7 +107,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PreprocessorDefinitions>USE_UPNP;UNICODE;WIN32;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\src\leveldb\include;D:\MyProjects\BitcoinDeps_2013\openssl-1.0.1e\inc32;D:\MyProjects\BitcoinDeps_2013\db-4.7.25.NC\build_windows;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0\boost;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\src\leveldb\include;D:\MyProjects\BitcoinDeps\openssl-1.0.1e\inc32;D:\MyProjects\BitcoinDeps\db-4.7.25.NC\build_windows;D:\MyProjects\BitcoinDeps\boost_1_55_0;D:\MyProjects\BitcoinDeps\boost_1_55_0\boost;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -119,7 +119,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>D:\MyProjects\BitcoinDeps_2013\miniupnpc\msvc\x64\Debug;D:\MyProjects\BitcoinDeps_2013\db-4.7.25.NC\build_windows\Debug_AMD64;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0\stage\lib\x64;D:\MyProjects\BitcoinDeps_2013\openssl-1.0.1e\out64.dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\MyProjects\BitcoinDeps\miniupnpc\msvc\x64\Debug;D:\MyProjects\BitcoinDeps\db-4.7.25.NC\build_windows\Debug_AMD64;D:\MyProjects\BitcoinDeps\boost_1_55_0\stage\lib\x64;D:\MyProjects\BitcoinDeps\openssl-1.0.1e\out64.dbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>iphlpapi.lib;miniupnpc.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;ssleay32.lib;libeay32.lib;libdb47sd.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
@@ -127,7 +127,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>USE_UPNP;UNICODE;WIN32;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\src\leveldb\include;D:\MyProjects\BitcoinDeps_2013\openssl-1.0.1e\inc32;D:\MyProjects\BitcoinDeps_2013\db-4.7.25.NC\build_windows;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0\boost;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\src\leveldb\include;D:\MyProjects\BitcoinDeps\openssl-1.0.1e\inc32;D:\MyProjects\BitcoinDeps\db-4.7.25.NC\build_windows;D:\MyProjects\BitcoinDeps\boost_1_55_0;D:\MyProjects\BitcoinDeps\boost_1_55_0\boost;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
@@ -137,7 +137,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>D:\MyProjects\BitcoinDeps_2013\miniupnpc\msvc\Release;D:\MyProjects\BitcoinDeps_2013\db-4.7.25.NC\build_windows\Release;D:\MyProjects\BitcoinDeps_2013\boost_1_55_0\stage\lib;D:\MyProjects\BitcoinDeps_2013\openssl-1.0.1e\out32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\MyProjects\BitcoinDeps\miniupnpc\msvc\Release;D:\MyProjects\BitcoinDeps\db-4.7.25.NC\build_windows\Release;D:\MyProjects\BitcoinDeps\boost_1_55_0\stage\lib;D:\MyProjects\BitcoinDeps\openssl-1.0.1e\out32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>miniupnpc.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;ssleay32.lib;libeay32.lib;libdb47s.lib;Shlwapi.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
