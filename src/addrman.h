@@ -56,12 +56,12 @@ public:
 
         void Init()
     {
-            nLastSuccess = 0;
-            nLastTry = 0;
-            nAttempts = 0;
-            nRefCount = 0;
-            fInTried = false;
-            nRandomPos = -1;
+        nLastSuccess = 0;
+        nLastTry = 0;
+        nAttempts = 0;
+        nRefCount = 0;
+        fInTried = false;
+        nRandomPos = -1;
     }
 
     CAddrInfo(const CAddress &addrIn, const CNetAddr &addrSource) : CAddress(addrIn), source(addrSource)
@@ -388,12 +388,12 @@ public:
 
         CAddrMan() : vRandom(0), vvTried(ADDRMAN_TRIED_BUCKET_COUNT, std::vector<int>(0)), vvNew(ADDRMAN_NEW_BUCKET_COUNT, std::set<int>())
     {
-            nKey.resize(32);
-            RAND_bytes(&nKey[0], 32);
+        nKey.resize(32);
+        RAND_bytes(&nKey[0], 32);
 
-            nIdCount = 0;
-            nTried = 0;
-            nNew = 0;
+        nIdCount = 0;
+        nTried = 0;
+        nNew = 0;
     }
 
     // Return the number of (unique) addresses in all tables.
