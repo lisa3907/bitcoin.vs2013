@@ -10,12 +10,12 @@
 #include "util.h"
 #include "sync.h"
 
+
 #include <map>
 #include <vector>
 
-
-
 #include <openssl/rand.h>
+
 
 /** Extended statistics about a CAddress */
 class CAddrInfo : public CAddress
@@ -46,7 +46,8 @@ private:
 
 public:
 
-    IMPLEMENT_SERIALIZE(
+    IMPLEMENT_SERIALIZE
+        (
         CAddress* pthis = (CAddress*)(this);
     READWRITE(*pthis);
     READWRITE(source);
@@ -281,9 +282,6 @@ public:
                 {
                     int nUBuckets = ADDRMAN_NEW_BUCKET_COUNT;
                     READWRITE(nUBuckets);
-
-
-
                     int nIds = 0;
                     for (std::map<int, CAddrInfo>::iterator it = am->mapInfo.begin(); it != am->mapInfo.end(); it++)
                     {
