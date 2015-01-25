@@ -1,0 +1,44 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          btc-service.sh
+# Required-Start:    $local_fs $syslog $remote_fs
+# Required-Stop:     $local_fs $syslog $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start bitcoin daemon
+### END INIT INFO
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/home/limyg612/bitcoin/src/
+NAME=btc-service
+DESC=btc-service
+
+BTCSERVER=/home/limyg612/bitcoin/src/bitcoind
+BTCSERVER_PID=$(ps auxf | grep bitcoind | grep -v grep | awk '{print $2}')
+
+BTCDIR="/data/.bitcoin"
+BTCARGS="-datadir=/data/.bitcoin -conf=/data/.bitcoin/bitcoin.conf"
+
+case "$1" in
+        start)
+                if [ -z "${BTCSERVER_PID}" ]; then
+                        echo "starting bitcoin server"
+                        ${BTCSERVER} -datadir=${BTCDIR} -conf=${BTCDIR}/bitcoin.conf
+                        echo "bitcoin server started"
+                else
+                        echo ${BTCARGS}
+                        echo "bitcoin server is running"
+                fi
+        ;;
+        stop)
+                if [ -n "${BTCSERVER_PID}" ]; then
+                        kill ${BTCSERVER_PID}
+                        echo "bitcoin server stopped"
+                else
+                        echo "bitcoin server is not running"
+                fi
+        ;;
+esac
+
+exit 0
